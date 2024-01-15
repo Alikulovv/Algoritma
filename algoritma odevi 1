@@ -1,1 +1,114 @@
+1.Algoritma nedir? Algoritmanın gerekliliğini ve avantajlarını açıklayınız.
+Cevap: Bilgisayardaki işlemlerin gerçekleştirilmesinde izlenecek adımlar dizisine algoritma denir. Yazılacak program için en uygun çözümün planlanması için gereklidir. Program hangi dille yazılacak 
+olursa olsun yazılacak algoritma değişmeyeceğinden hazır bir algoritma herhangi bir dilde kullanılabilir.
+
+2.Program yazılmadan önce algoritması mı hazırlanmalı yoksa akış şeması mı çizilmelidir?
+Cevap: Algoritma hazırlanmalıdır.
+
+3.Algoritma hazırlanırken dikkat edilmesi gereken hususları açıklayınız.
+1.Problem iyice irdelenir.
+2.Çözüm yolları ortaya konularak programlamaya en uygun(en az komut, en kısa süre, en doğru/hassas sonuç) çözüm yolu seçilir.
+3.Programın algoritması hazırlanır.
+
+4.Değişken nedir? Programlarda neden değişkenlere ihtiyaç duyulmaktadır?
+Cevap: Programın her çalıştırılmasında farklı değerler alabilen/aktarılabilen bilgi alanları değişken olarak adlandırılır. Verileri saklayabilmek ve veriler ile işlem yapabilmek için değişkenler gereklidir.
+
+5.Sayaçlar nerelerde ve niçin kullanılmaktadır?
+Cevap: Bazı işlemlerin belirli sayıda yapılması veya işlenen değerlerin sayılması gerektiği programlarda kullanılır.
+
+Eski S	Eski T	Yeni S	Yeni T
+0	0	S=0+2=2	T=0+2*0=0
+2	0	S=2+2=4	T=0+2*2=4
+4	4	S=4+2=6	T=4+2*4=12
+6	12	S=6+2=8	T=12+2*6=24
+8	24	S=8+2=10	T=24+2*8=40
+10	40	S=10+2=12	T=40+2*10=60
+6.Verilen algoritmanın sonucu nedir?	
+1.Başla
+2.T=0
+3.S=0
+4.Eğer S>10 ise Git 8
+5.T=T+2*S
+6.S=S+2
+7.Git 4
+8.Yaz T
+9.Dur                     Cevap:60
+ 
+Eski S	Eski F	Yeni S	Orta F	Yeni F
+20	1	S=20-3=17	F=1+17=18	F=18+2=20
+17	20	S=17-3=14	F=18+14=32	F=32+2=34
+14	34	S=14-3=11	F=34+11=45	F=45+2=47
+11	47	S=11-3=8	F=47+8=55	F=55+2=57
+8	57	S=8-3=5	F=57+5=62	F=62+2=64
+5	64	S=5-3=2	F=64+2=66	F=66+2=68
+2	68	S=2-3=-1	F=68-1=67	F=67+2=69
+7.Verilen algoritmanın sonucunu hesaplayınız.
+1.Başla
+2.F=1
+3.S=20
+4.Eğer S<1 ise Git 9
+5.S=S-3
+6.F=F+S
+7.F=F+2
+8.Git 4 
+9.Yaz F
+10.Dur			Cevap:69
+
+
+
+
+
+
+8.Girilen üç sayıdan en büyüğünü bulan programın algoritmasını yazınız.
+1.Başla
+2.Sayıyı (A) gir
+3.Sayıyı (B) gir
+4.Sayıyı (C) gir
+5.Eğer A>B ise Git 11 
+6.Eğer B>C ise Git 9
+7.Yaz C
+8.Git 13
+9.Yaz B
+10.Git 13
+11.Eğer C>A ise Git 7
+12.Yaz A
+13.Dur
+
+ 
+9.Girilen üç sayıyı küçükten büyüğe sıralayan programın algoritmasını yazınız.
+1.Başla			22.Git 34
+2.Sayıyı (A) gir		23.eb=A
+3.Sayıyı (B) gir		24.Eğer B>C ise Git 28
+4.Sayıyı (C) gir		25.O=C
+5.eb=0			26.ek=B
+6.ek=0			27.Git 34
+7.O=0			28.O=B
+8.Eğer A>B ise Git 18	29.ek=C
+9.Eğer A>C ise Git 31	30.Git 34
+10.ek=A			31.ek=C 
+11.Eğer C>B ise Git 15	32. O=A
+12.O=C			33.eb=B
+13.eb=B			34.Yaz ek
+14.Git 34			35.Yaz O
+15.O=B			36.Yaz eb
+16.eb=C			37.Bitir
+17.Git 34
+18.Eğer A>C ise Git 23
+19.ek=B
+20.O=A
+21.eb=C
+10.1-99 arasındaki tek ve çift sayıların toplamları ile çarpımlarını ayrı ayrı hesaplayan programın algoritmasını yazınız.
+1.Başla			12.t=3				23.ccarp=ccarp*c
+2.ttoplam=0		13.Eğer t>98 Git 17		24.c=c+2
+3.t=1			14.tcarp=tcarp*t		25.Git 22
+4.tcarp=1			15.t=t+2			26.Yaz ttoplam
+5.c=2			16.Git 13			27.Yaz tcarp
+6.ctoplam=0		17.Eğer c>99 Git 21		28.Yaz ctoplam
+7.ccarp=2			18.ctoplam=ctoplam+c		29.Yaz ccarp
+8.Eğer t>98 Git 12		19.c=c+2			30.Dur
+9.ttoplam=ttoplam+t	20.Git 17
+10.t=t+2			21.c=4
+11.Git 8			22.Eğer c>99 Git
+
+
 
