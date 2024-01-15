@@ -1,1 +1,78 @@
+Fibonacci
+#include <stdio.h>
+
+int main()
+{
+    int i,terim1=1,terim2=1,terim3,n;
+    
+    printf("fibonacci dizisinin kac terimini gormek istediginizi girin:");
+    scanf("%d",&n);
+    
+    if(n<=2){
+        switch(n){
+            case 0:return 0;
+            case 1:printf("1");return 0;
+            case 2:printf("1 1");return 0;
+        }
+    }
+    printf("1 1");
+    for(i=1;i<=n-2;i++){
+        terim3=terim1+terim2;
+        terim2=terim1;
+        terim1=terim3;
+        printf(" %d",terim3);
+        if(i%10==0){
+            printf("\n   ");
+        }
+        
+    }
+
+    return 0;
+}
+En büyük sayı
+#include <stdio.h>
+
+int main()
+{
+   int a,b,c;
+   
+   printf("En buyugunun bulunmasi icin 3 sayi girin:");
+   scanf("%d%d%d",&a,&b,&c);
+   
+   if(a>=b && a>=c){
+       printf("%d",a);
+   }else if(b>=a && b>=c){
+       printf("%d",b);
+   }else{
+       printf("%d",c);
+   }
+   
+   
+    return 0;
+}
+ 
+Haftanın günleri
+#include <stdio.h>
+
+int main()
+{
+   int gun;
+   
+   printf("Haftanin kacinci gununu gormek istediginizi seciniz:");
+   scanf("%d",&gun);
+   
+   switch(gun){
+       case 1:printf("Pazartesi");break;
+       case 2:printf("Sali");break;
+       case 3:printf("Carsamba");break;
+       case 4:printf("Persembe");break;
+       case 5:printf("Cuma");break;
+       case 6:printf("Cumartesi");break;
+       case 7:printf("Pazar");break;
+       default:printf("Yanlis karakter girildi!");break;
+   }
+   
+   
+    return 0;
+}
 
